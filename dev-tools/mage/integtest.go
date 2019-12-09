@@ -189,6 +189,8 @@ func runInIntegTestEnv(mageTarget string, test func() error, passThroughEnvVars 
 		// Disable strict.perms because we moust host dirs inside containers
 		// and the UID/GID won't meet the strict requirements.
 		"-e", "BEAT_STRICT_PERMS=false",
+		// turn off go modules
+		"-e", "GO111MODULE=off",
 		// compose.EnsureUp needs to know the environment type.
 		"-e", "STACK_ENVIRONMENT=" + StackEnvironment,
 		"-e", "TESTING_ENVIRONMENT=" + StackEnvironment,
