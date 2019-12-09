@@ -7,7 +7,6 @@ require (
 	cloud.google.com/go v0.38.0
 	github.com/Azure/azure-sdk-for-go v0.0.0-20190805171550-a629ae7873bf
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
-	github.com/Azure/go-autorest v11.1.2+incompatible
 	github.com/Azure/go-autorest/autorest v0.9.3 // indirect
 	github.com/Azure/go-autorest/autorest/azure/auth v0.4.1
 	github.com/Azure/go-autorest/autorest/date v0.2.0
