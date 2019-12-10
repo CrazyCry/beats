@@ -7,6 +7,7 @@ services:
     env_file:
     - ${PWD}/build/test.env
     environment:
+    - GO111MODULE=off
     - REDIS_HOST=redis
     - REDIS_PORT=6379
     working_dir: /go/src/github.com/elastic/beats/heartbeat

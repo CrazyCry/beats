@@ -6,6 +6,7 @@ services:
     environment:
       - BEAT_STRICT_PERMS=false
       - TEST_ENVIRONMENT=false
+      - GO111MODULE=off
     working_dir: /go/src/github.com/elastic/beats/metricbeat
     volumes:
       - ${PWD}/..:/go/src/github.com/elastic/beats/

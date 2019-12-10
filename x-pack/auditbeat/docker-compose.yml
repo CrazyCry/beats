@@ -6,6 +6,8 @@ services:
     volumes:
       - ${PWD}/../..:/go/src/github.com/elastic/beats/
       - /sys:/sys
+    environment:
+      - GO111MODULE=off
     command: make
     privileged: true
     pid: host

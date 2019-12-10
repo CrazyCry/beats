@@ -5,6 +5,7 @@ services:
     depends_on:
       - proxy_dep
     environment:
+      - GO111MODULE=off
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - SREDIS_HOST=sredis

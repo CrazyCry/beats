@@ -7,6 +7,7 @@ services:
     environment:
       - ES_BEATS=/go/src/github.com/elastic/beats
       - BEAT_STRICT_PERMS=false
+      - GO111MODULE=off
       - ES_HOST=elasticsearch
       - ES_PORT=9200
       - PUBSUB_EMULATOR_HOST=googlepubsub:8432

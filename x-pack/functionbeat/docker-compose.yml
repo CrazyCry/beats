@@ -9,6 +9,8 @@ services:
       - ${PWD}/../..:/go/src/github.com/elastic/beats/
       # We launch docker containers to test docker autodiscover:
       - /var/run/docker.sock:/var/run/docker.sock
+    environtment:
+      - GO111MODULE=off
     command: make
 
   # This is a proxy used to block beats until all services are healthy.
